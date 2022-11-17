@@ -1,8 +1,4 @@
 #! Kullanıcının girdiği sayı kadar vize-final sınavları girilebilmesi beklenmektedir.
-# ders sayısı gireceğiz ona göre her ders için 1 vize 1 final girilecek
-# ve girilen vize final dersin ortalaması alınıp geçip kalınan
-# ders sayısını bulmamız gerekli
-#
 
 ders_sayisi = int(input('ders sayısı giriniz: '))
 
@@ -31,5 +27,10 @@ for i in range(1,ders_sayisi+1):
     if harf != 'FF':
         gecilen_ders_sayisi+=1
 
+<<<<<<< HEAD
 print(f"Geçilen ders sayısı: {gecilen_ders_sayisi} ")
 print(f"Kalınan ders sayısı: {ders_sayisi-gecilen_ders_sayisi} ")
+=======
+print(f"Geçilen ders sayısı: {gecilen_ders} ")
+print(f"Kalınan ders sayısı: {ders_sayisi-gecilen_ders} ")
+>>>>>>> d30897bbd4b35159f8e54060b9e1c872e3b9b673
