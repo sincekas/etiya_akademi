@@ -14,4 +14,4 @@ else:
     print('Artis oku')
 
 #if dolar_dun==dolar_bugun:
-    print('Esittir ooku')
+    print('Esittir oku')
