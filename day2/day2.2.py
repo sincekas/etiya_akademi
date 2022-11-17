@@ -29,4 +29,3 @@ for i in range(1,ders_sayisi+1):
 
 print(f"Geçilen ders sayısı: {gecilen_ders} ")
 print(f"Kalınan ders sayısı: {ders_sayisi-gecilen_ders} ")
-print(f"Kalınan ders sayısı: {ders_sayisi-gecilen_ders} ")
