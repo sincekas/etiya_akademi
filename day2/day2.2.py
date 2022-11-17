@@ -6,7 +6,7 @@
 
 ders_sayisi = int(input('ders sayısı giriniz: '))
 
-temp=0
+gecilen_ders = 0
 
 for i in range(1,ders_sayisi+1):
     
@@ -29,7 +29,7 @@ for i in range(1,ders_sayisi+1):
     print(f"Not ortalaması: {ortalama}, Harf notu: {harf} ")
     
     if harf != 'FF':
-        temp+=1
+        gecilen_ders+=1
 
-print(f"Geçilen ders sayısı: {temp} ")
-print(f"Kalınan ders sayısı: {ders_sayisi-temp} ")
+print(f"Geçilen ders sayısı: {gecilen_ders} ")
+print(f"Kalınan ders sayısı: {ders_sayisi-gecilen_ders} ")
