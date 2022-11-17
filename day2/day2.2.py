@@ -2,7 +2,7 @@
 # ders sayısı gireceğiz ona göre her ders için 1 vize 1 final girilecek
 # ve girilen vize final dersin ortalaması alınıp geçip kalınan
 # ders sayısını bulmamız gerekli
-
+#
 
 ders_sayisi = int(input('ders sayısı giriniz: '))
 
@@ -26,9 +26,8 @@ for i in range(1,ders_sayisi+1):
         harf = 'AA'
     else:
         print('Hatalı girdiniz.')
-
     print(f"Not ortalaması: {ortalama}, Harf notu: {harf} ")
-
+    
     if harf != 'FF':
         gecilen_ders+=1
 
