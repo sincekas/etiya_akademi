@@ -10,8 +10,8 @@ temp=0
 
 for i in range(1,ders_sayisi+1):
     
-    vize = int(input(f'vize{i}: '))
-    final = int(input(f'final{i}: '))
+    vize = float(input(f'vize{i}: '))
+    final = float(input(f'final{i}: '))
     ortalama = (vize*0.4)+(final*0.6)
     
     if (ortalama>=0) and (ortalama<=49):
