@@ -1,16 +1,35 @@
 #! Kullanıcının girdiği sayı kadar vize-final sınavları girilebilmesi beklenmektedir.
-
-vize_sayisi = int(input('vize sayısı giriniz: '))
-final_sayisi = int(input('final sayısı giriniz: '))
-
-vize_ort = 0
-final_ort = 0
-
-for i in range(1,vize_sayisi+1):
-    vize_ort += float(input('vize'+str(i)+': '))
+# ders sayısı gireceğiz ona göre her ders için 1 vize 1 final girilecek
+# ve girilen vize final dersin ortalaması alınıp geçip kalınan
+# ders sayısını bulmamız gerekli
 
 
-for i in range(1,final_sayisi+1):
-    final_ort += float(input('final'+str(i)+': '))
+ders_sayisi = int(input('ders sayısı giriniz: '))
 
-print(f"Ortalama = {(vize_ort/vize_sayisi)*0.4 + (final_ort/final_sayisi)*0.6} ")
+temp=0
+
+for i in range(1,ders_sayisi+1):
+    
+    vize = int(input(f'vize{i}: '))
+    final = int(input(f'final{i}: '))
+    ortalama = (vize*0.4)+(final*0.6)
+    
+    if (ortalama>=0) and (ortalama<=49):
+        harf = 'FF'
+    elif (ortalama>=50) and (ortalama<=59):
+        harf = 'DD'
+    elif (ortalama>=60) and (ortalama<=69):
+        harf = 'CC'
+    elif (ortalama>=70) and (ortalama<=79):
+        harf = 'BB'
+    elif (ortalama>=80) and (ortalama<=100):
+        harf = 'AA'
+    else:
+        print('Hatalı girdiniz.')
+    print(f"Not ortalaması: {ortalama}, Harf notu: {harf} ")
+    
+    if harf != 'FF':
+        temp+=1
+
+print(f"Geçilen ders sayısı: {temp} ")
+print(f"Kalınan ders sayısı: {ders_sayisi-temp} ")
