@@ -1,8 +1,4 @@
 #! Kullanıcının girdiği sayı kadar vize-final sınavları girilebilmesi beklenmektedir.
-# ders sayısı gireceğiz ona göre her ders için 1 vize 1 final girilecek
-# ve girilen vize final dersin ortalaması alınıp geçip kalınan
-# ders sayısını bulmamız gerekli
-#
 
 ders_sayisi = int(input('ders sayısı giriniz: '))
 
