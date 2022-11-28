@@ -1,5 +1,5 @@
 select * from adresses;
-select * from brands
+select * from brands;
 select * from categories;
 select * from cities;
 select * from customers;
@@ -19,13 +19,13 @@ select distinct city_id from towns;
 
 -- like
 
-select * from customers 
+select * from customers;
 where username like '%s%';
 
-select first_name,second_name from customers 
+select first_name,second_name from customers;
 where lower(second_name) like 'a%';
 
-select name from towns 
+select name from towns;
 where lower(name) like '%ya%';
 
 -- order by
@@ -51,5 +51,5 @@ select * from towns where name in('Kadıköy');
 
 Select * from products Where lower(Name) Like '%spor%';
 select username,mail from customers where mail like '%etiya.com';
-select username,first_name,second_name from customers where username like '_e%'
+select username,first_name,second_name from customers where username like '_e%';
 Select * from products Where lower(Name) Like '%__y%';
